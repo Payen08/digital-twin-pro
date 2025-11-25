@@ -4425,11 +4425,17 @@ const App = () => {
                 )}
 
 
-                {/* Top Right Controls: Preview Toggle */}
+                {/* Top Right Controls: Preview Button */}
                 <div className="absolute top-4 right-6 z-20 flex gap-3">
-                    <button onClick={() => setIsPreviewMode(!isPreviewMode)} className={`glass-panel p-1.5 bg-[#080808] rounded-lg transition-colors ${isPreviewMode ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'}`} title={isPreviewMode ? "退出预览 (ESC)" : "进入预览模式"}>
-                        <Play size={18} fill={isPreviewMode ? "currentColor" : "none"} />
-                    </button>
+                    <a 
+                        href="https://www.figma.com/proto/evYdd25AKezIYSp8T5A1x8/Untitled?page-id=0%3A1&node-id=1-996&viewport=317%2C241%2C0.24&scaling=contain&content-scaling=fixed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="glass-panel p-1.5 bg-[#080808] rounded-lg transition-colors text-gray-400 hover:text-white hover:bg-blue-600 flex items-center justify-center"
+                        title="打开预览页面"
+                    >
+                        <Play size={18} />
+                    </a>
                 </div>
 
                 {/* Bottom Right Controls: Zoom Controls (Vertical) */}
